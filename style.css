@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f3f6f9;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.search-bar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  background: #0078ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #005fcc;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.drink-column, .group-column {
+  flex: 1;
+  max-width: 500px;
+}
+
+.drink-card, .group-card {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.drink-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.drink-card h4 {
+  margin: 5px 0;
+}
+
+.drink-card button {
+  margin-right: 5px;
+  background: #0078ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.drink-card button:hover {
+  background: #005fcc;
+}
+
+.group-card {
+  background: #e7f0ff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius:5px;
+  width: 400px;
+  position: relative;
+}
+
+#closeModal {
+  position: absolute;
+  top:5px;
+  right:10px;
+  cursor: pointer;
+  font-size: 20px;
+}

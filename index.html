@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drink Group App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Drink Group App</h1>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search drinks...">
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <div class="container">
+    <div class="drink-column" id="drinkColumn">
+    </div>
+    
+    <div class="group-column">
+      <h3>Selected Drinks (<span id="drinkCount">0</span>/7)</h3>
+      <div id="groupCardContainer">
+      
+      </div>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
